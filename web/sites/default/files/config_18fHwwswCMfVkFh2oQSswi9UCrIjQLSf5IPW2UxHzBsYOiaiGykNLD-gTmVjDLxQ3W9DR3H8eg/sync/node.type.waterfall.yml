@@ -1,0 +1,17 @@
+uuid: 8078c1fd-a9ef-4d41-a333-702bb2fd5e56
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: waterfall
+type: waterfall
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false
