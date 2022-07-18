@@ -1,0 +1,21 @@
+uuid: 36d04a1b-f446-474b-828a-7b2e068a7e2f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_hike_difficulty
+    - node.type.waterfall
+id: node.waterfall.field_hike_difficulty
+field_name: field_hike_difficulty
+entity_type: node
+bundle: waterfall
+label: 'Hike Difficulty'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings: {  }
+field_type: entity_reference

@@ -1,0 +1,8 @@
+uuid: ff14c223-b410-4573-92db-a5ec4746323b
+langcode: en
+status: true
+dependencies: {  }
+name: 'Hiking Difficutly'
+vid: hiking_difficutly
+description: ''
+weight: 0

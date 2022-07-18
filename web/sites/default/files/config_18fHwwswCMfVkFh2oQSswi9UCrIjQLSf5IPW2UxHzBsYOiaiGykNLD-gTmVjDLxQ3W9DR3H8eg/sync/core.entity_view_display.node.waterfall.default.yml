@@ -4,11 +4,14 @@ status: true
 dependencies:
   config:
     - field.field.node.waterfall.body
+    - field.field.node.waterfall.field_hike_difficulty
     - field.field.node.waterfall.field_hike_duration
     - field.field.node.waterfall.field_image
+    - field.field.node.waterfall.field_location
     - field.field.node.waterfall.field_official_website
     - field.field.node.waterfall.field_walking_and_driving_instru
     - field.field.node.waterfall.field_waterfall_height
+    - field.field.node.waterfall.field_waterfall_video
     - node.type.waterfall
   module:
     - image
@@ -26,6 +29,14 @@ content:
     settings: {  }
     third_party_settings: {  }
     weight: 101
+    region: content
+  field_hike_difficulty:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 109
     region: content
   field_hike_duration:
     type: number_integer
@@ -46,6 +57,14 @@ content:
         attribute: lazy
     third_party_settings: {  }
     weight: 103
+    region: content
+  field_location:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 108
     region: content
   field_official_website:
     type: link
@@ -74,6 +93,15 @@ content:
       prefix_suffix: true
     third_party_settings: {  }
     weight: 106
+    region: content
+  field_waterfall_video:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 107
     region: content
   links:
     settings: {  }
